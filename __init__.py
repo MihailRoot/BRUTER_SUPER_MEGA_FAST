@@ -1,2 +1,3 @@
 from .brutemd5 import Brutemd5
-from .bcrypt import Brutebcrypt
+from .bcryptbrute import Brutebcrypt
+from .brutessh import Brutessh
