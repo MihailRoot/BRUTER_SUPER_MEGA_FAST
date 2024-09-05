@@ -18,8 +18,7 @@ class Brutebcrypt():
                 byte_line  = line.strip().encode("utf-8")
                 if bcrypt.checkpw(byte_line, strtobytes):
                     self.result.append(f"Пароль '{line.strip()}' верный!")
-                else:
-                    self.result.append(f"Пароль '{line.strip()}' неверный!")
+                    break
         return self.result  # Возвращаем все результаты
     
     def main(self):

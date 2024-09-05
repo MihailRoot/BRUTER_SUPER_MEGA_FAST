@@ -20,8 +20,7 @@ class Brutemd5():
         # Сравниваем с хешем из файла
                 if byte_line.decode('utf-8') == md5_hash:
                     self.result.append( f"Пароль '{byte_line.decode()}' верный!")
-                else:
-                    self.result.append( f"Пароль '{byte_line.decode()}' неверный!")
+                    break
         return self.result 
 
  
